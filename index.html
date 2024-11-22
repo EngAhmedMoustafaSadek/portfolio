@@ -234,31 +234,5 @@
     <footer>
         <p>© 2024 Ahmed Moustafa Sadek. All rights reserved. | <a href="#about">Back to Top</a></p>
     </footer>
-
-    <!-- JavaScript to Handle Hash Retention on View Change -->
-    <script>
-        // Handle page reload or resizing with hash
-        window.addEventListener('resize', () => {
-            const currentHash = window.location.hash;
-            if (currentHash) {
-                // Scroll to the correct section on resize
-                const section = document.querySelector(currentHash);
-                if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                }
-            }
-        });
-
-        // Ensure the hash is interpreted correctly on load
-        window.addEventListener('load', () => {
-            const currentHash = window.location.hash;
-            if (currentHash) {
-                const section = document.querySelector(currentHash);
-                if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                }
-            }
-        });
-    </script>
 </body>
 </html>
